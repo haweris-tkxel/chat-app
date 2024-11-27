@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ChatButton = ({ name, onClick = () => {}, top, left }) => {
+const ChatButton = ({ onClick = () => {}, top, left }) => {
   return (
     <div
       style={{
@@ -8,7 +8,7 @@ const ChatButton = ({ name, onClick = () => {}, top, left }) => {
         top: top,
         left: left,
       }}
-      className={`bg-transparent text-white w-[10.25rem] h-[3.1rem] rounded`}
+      className={`bg-transparent text-white w-[8.1rem] h-[2.5rem] rounded`}
     >
       <button className="w-full h-full" onClick={onClick} />
     </div>
