@@ -21,7 +21,7 @@ const MessageInput = ({currentReceiverName, messages, setMessages}) => {
       receiverName: currentReceiverName,
       senderName: sender,
       text: message,
-      time: new Date().toLocaleTimeString(),
+      time: new Date(),
     };
 
     try {

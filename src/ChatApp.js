@@ -34,7 +34,7 @@ const ChatApp = () => {
         setCurrentReceiverName={setCurrentReceiverName}
       />
       {chatBoxToggle && currentReceiverName && (
-        <div className="fixed chat-app bg-white rounded-md shadow-md flex flex-col max-w-md top-[8%] right-[5%] bottom-[8%]">
+        <div className="fixed chat-app bg-white rounded-md shadow-md flex flex-col max-w-[28rem] min-w-[28rem] top-[8%] right-[5%] bottom-[8%]">
           <ChatHeader
             setChatBoxToggle={setChatBoxToggle}
             name={currentReceiverName}

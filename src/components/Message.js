@@ -1,9 +1,8 @@
 import React from 'react';
-// import { format } from 'date-fns';
+import { formatDate } from '@/config';
 
 const Message = ({ currentReceiverName, receiver, text, time }) => {
   const isUser = receiver === currentReceiverName;
-  // const formattedTime = format(new Date(time), 'p');
 
   return (
     <div className={`message mb-4 ${isUser ? 'text-right' : ''}`}>
@@ -14,7 +13,7 @@ const Message = ({ currentReceiverName, receiver, text, time }) => {
       >
         {text}
       </div>
-      <p className="text-xs text-gray-500 mt-1">{time}</p>
+      <p className="text-xs text-gray-500 mt-1">{formatDate(time)}</p>
     </div>
   );
 };
